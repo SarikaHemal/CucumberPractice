@@ -28,13 +28,16 @@ public class LoginStepDefination {
 	    Assert.assertEquals("Free CRM #1 cloud software for any business large or small", title);
 	    
 	}
+	 //Reg Exp:
+	 //1. \"([^\"]*)\"
+	 //2. \"(.*)\"
 
-	@Then("^user can enter Username and Password$")
-	public void user_can_enter_Username_and_Password() throws InterruptedException {
+	@Then("^user can enter \"([^\"]*)\"and \"([^\"]*)\"$")
+	public void user_can_enter_Username_and_Password(String username,String password) throws InterruptedException {
 		driver.findElement(By.xpath("//a[@href='https://ui.freecrm.com'][contains(.,'Log In')]")).click();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//input[contains(@name,'email')]")).sendKeys("sarikabamania13@gmail.com");
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Myne2017");
+		driver.findElement(By.xpath("//input[contains(@name,'email')]")).sendKeys(username);
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
 	}
 
 	@Then("^user click on login button$")
@@ -48,7 +51,11 @@ public class LoginStepDefination {
 		String title=driver.getTitle();
 		System.out.println(title);
 		Assert.assertEquals("Cogmento CRM", title);
-		driver.close();
+			
+	}
+	@Then("^close the browser$")
+	public void close_the_browser()  {
+		driver.quit();
 		
 	}
 
