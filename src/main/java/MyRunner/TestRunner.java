@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "C:\\Users\\sarik\\eclipse-workspace\\CucumberPractice\\src\\main\\java\\Features\\Deals.Feature", //the path of the feature files
+		features = "C:\\Users\\sarik\\eclipse-workspace\\CucumberPractice\\src\\main\\java\\Features\\DealMap.Feature", //the path of the feature files
 		glue={"StepDefinations"}, //the path of the step definition files
 		format= {"pretty","html:test-outout"},// "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"}, //to generate different types of reporting
 		//monochrome = true, //display the console output in a proper readable format
