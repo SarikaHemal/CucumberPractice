@@ -1,190 +1,133 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/sarik/eclipse-workspace/CucumberPractice/src/main/java/Features/Login.Feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/sarik/eclipse-workspace/CucumberPractice/src/main/java/Features/Deals.Feature");
 formatter.feature({
   "line": 1,
-  "name": "FreeCRM Login Feature",
+  "name": "Deal data creation",
   "description": "",
-  "id": "freecrm-login-feature",
+  "id": "deal-data-creation",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "comments": [
-    {
-      "line": 3,
-      "value": "#Scenario: FreeCRM Login Test"
-    },
-    {
-      "line": 4,
-      "value": "#"
-    },
-    {
-      "line": 5,
-      "value": "#Given user is on Login page"
-    },
-    {
-      "line": 6,
-      "value": "#When title is login page FreeCrm"
-    },
-    {
-      "line": 7,
-      "value": "#Then user can enter Username and Password"
-    },
-    {
-      "line": 8,
-      "value": "#Then  user click on login button"
-    },
-    {
-      "line": 9,
-      "value": "#Then user should able to login to page"
-    }
-  ],
-  "line": 11,
-  "name": "FreeCRM Login Test",
+formatter.scenario({
+  "line": 3,
+  "name": "Free CRM Create a new deal scenario",
   "description": "",
-  "id": "freecrm-login-feature;freecrm-login-test",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 13,
-  "name": "user is on Login page",
+  "line": 5,
+  "name": "user is already on Login Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 14,
-  "name": "title is login page FreeCrm",
+  "line": 6,
+  "name": "title of login page is Free CRM",
   "keyword": "When "
 });
 formatter.step({
-  "line": 15,
-  "name": "user can enter \"\u003cusername\u003e\"and \"\u003cpassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "user click on login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "user should able to login to page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "close the browser",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 20,
-  "name": "",
-  "description": "",
-  "id": "freecrm-login-feature;freecrm-login-test;",
+  "line": 7,
+  "name": "user enters username and password",
   "rows": [
-    {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 21,
-      "id": "freecrm-login-feature;freecrm-login-test;;1"
-    },
     {
       "cells": [
         "sarikabamania13@gmail.com",
         "Myne2017"
       ],
-      "line": 22,
-      "id": "freecrm-login-feature;freecrm-login-test;;2"
+      "line": 8
     }
   ],
-  "keyword": "Examples"
+  "keyword": "Then "
 });
-formatter.scenario({
-  "line": 22,
-  "name": "FreeCRM Login Test",
-  "description": "",
-  "id": "freecrm-login-feature;freecrm-login-test;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
+formatter.step({
+  "line": 10,
+  "name": "user clicks on login button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "user is on home page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "user moves to new deal page",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 13,
-  "name": "user is on Login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 14,
-  "name": "title is login page FreeCrm",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 15,
-  "name": "user can enter \"sarikabamania13@gmail.com\"and \"Myne2017\"",
-  "matchedColumns": [
-    0,
-    1
+  "name": "user enters deal details",
+  "rows": [
+    {
+      "cells": [
+        "test deal",
+        "50",
+        "500",
+        "10"
+      ],
+      "line": 14
+    }
   ],
   "keyword": "Then "
 });
 formatter.step({
   "line": 16,
-  "name": "user click on login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "user should able to login to page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "close the browser",
+  "name": "Close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefination.user_on_login_page()"
+  "location": "DealStepDefinations.user_already_on_login_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 15651061100,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefination.title_is_login_page_FreeCrm()"
+  "location": "DealStepDefinations.title_of_login_page_is_free_CRM()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 14179300,
+  "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "sarikabamania13@gmail.com",
-      "offset": 16
-    },
-    {
-      "val": "Myne2017",
-      "offset": 47
-    }
-  ],
-  "location": "LoginStepDefination.user_can_enter_Username_and_Password(String,String)"
+  "location": "DealStepDefinations.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5972752000,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefination.user_click_on_login_button()"
+  "location": "DealStepDefinations.user_clicks_on_login_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 100575400,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefination.user_should_able_to_login_to_page()"
+  "location": "DealStepDefinations.user_is_on_home_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10329600,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefination.close_the_browser()"
+  "location": "DealStepDefinations.user_moves_to_new_deal_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 6461446900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DealStepDefinations.user_enters_contacts_details(DataTable)"
+});
+formatter.result({
+  "duration": 3687627100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DealStepDefinations.close_the_browser()"
+});
+formatter.result({
+  "duration": 817525400,
+  "status": "passed"
 });
 });
