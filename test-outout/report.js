@@ -1,167 +1,140 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/sarik/eclipse-workspace/CucumberPractice/src/main/java/Features/DealMap.Feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/sarik/eclipse-workspace/CucumberPractice/src/main/java/Features/Taging.Feature");
 formatter.feature({
-  "line": 1,
-  "name": "Deal data creation",
+  "line": 2,
+  "name": "Free CRM application testing",
   "description": "",
-  "id": "deal-data-creation",
-  "keyword": "Feature"
+  "id": "free-crm-application-testing",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@FunctionalTest"
+    }
+  ]
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Free CRM Create a new deal scenario",
+  "line": 9,
+  "name": "Login with incorrect username and correct password",
   "description": "",
-  "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+  "id": "free-crm-application-testing;login-with-incorrect-username-and-correct-password",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 8,
+      "name": "@RegressionTest"
+    }
+  ]
 });
 formatter.step({
-  "line": 5,
-  "name": "user is already on Login Page",
+  "line": 10,
+  "name": "This is a invalid login test",
   "keyword": "Given "
 });
-formatter.step({
-  "line": 6,
-  "name": "title of login page is Free CRM",
-  "keyword": "When "
+formatter.match({
+  "location": "TagingStepDefination.this_is_a_invalid_login_test()"
 });
-formatter.step({
-  "line": 7,
-  "name": "user enters username and password",
-  "rows": [
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 21,
+  "name": "Create a tasks",
+  "description": "",
+  "id": "free-crm-application-testing;create-a-tasks",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
     {
-      "cells": [
-        "Email",
-        "Password"
-      ],
-      "line": 8
-    },
-    {
-      "cells": [
-        "sarikabamania13@gmail.com",
-        "Myne2017"
-      ],
-      "line": 9
+      "line": 20,
+      "name": "@RegressionTest"
     }
-  ],
-  "keyword": "Then "
+  ]
 });
 formatter.step({
-  "line": 11,
-  "name": "user clicks on login button",
-  "keyword": "Then "
+  "line": 22,
+  "name": "This is a tasks test case",
+  "keyword": "Given "
 });
-formatter.step({
-  "line": 12,
-  "name": "user is on home page",
-  "keyword": "Then "
+formatter.match({
+  "location": "TagingStepDefination.this_is_a_tasks_test_case()"
 });
-formatter.step({
-  "line": 13,
-  "name": "user moves to new deal page",
-  "keyword": "Then "
+formatter.result({
+  "status": "skipped"
 });
-formatter.step({
-  "line": 14,
-  "name": "user enters deal details",
-  "rows": [
+formatter.scenario({
+  "line": 65,
+  "name": "validate a report",
+  "description": "",
+  "id": "free-crm-application-testing;validate-a-report",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
     {
-      "cells": [
-        "Title",
-        "Probability",
-        "Amount",
-        "Commission"
-      ],
-      "line": 15
-    },
-    {
-      "cells": [
-        "test deal1",
-        "50",
-        "500",
-        "10"
-      ],
-      "line": 16
-    },
-    {
-      "cells": [
-        "test deal2",
-        "40",
-        "1000",
-        "30"
-      ],
-      "line": 17
-    },
-    {
-      "cells": [
-        "test deal3",
-        "30",
-        "5000",
-        "50"
-      ],
-      "line": 18
+      "line": 64,
+      "name": "@End2End"
     }
-  ],
-  "keyword": "Then "
+  ]
 });
 formatter.step({
-  "line": 20,
-  "name": "Close the browser",
-  "keyword": "Then "
+  "line": 66,
+  "name": "This is a report test",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "DealMapStepDefination.user_already_on_login_page()"
+  "location": "TagingStepDefination.this_is_a_report_test()"
 });
 formatter.result({
-  "duration": 13404335600,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 69,
+  "name": "Application Logout",
+  "description": "",
+  "id": "free-crm-application-testing;application-logout",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 68,
+      "name": "@End2End"
+    }
+  ]
+});
+formatter.step({
+  "line": 70,
+  "name": "This is a logout test",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "DealMapStepDefination.title_of_login_page_is_free_CRM()"
+  "location": "TagingStepDefination.this_is_a_logout_test()"
 });
 formatter.result({
-  "duration": 8462300,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 72,
+  "name": "browser closed",
+  "description": "",
+  "id": "free-crm-application-testing;browser-closed",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 71,
+      "name": "@End2End"
+    }
+  ]
+});
+formatter.step({
+  "line": 73,
+  "name": "This is a close broswer test",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "DealMapStepDefination.user_enters_username_and_password(DataTable)"
+  "location": "TagingStepDefination.this_is_a_close_broswer_test()"
 });
 formatter.result({
-  "duration": 5855017800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealMapStepDefination.user_clicks_on_login_button()"
-});
-formatter.result({
-  "duration": 57513000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealMapStepDefination.user_is_on_home_page()"
-});
-formatter.result({
-  "duration": 5965000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealMapStepDefination.user_moves_to_new_deal_page()"
-});
-formatter.result({
-  "duration": 6249009300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealMapStepDefination.user_enters_contacts_details(DataTable)"
-});
-formatter.result({
-  "duration": 19931045400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealMapStepDefination.close_the_browser()"
-});
-formatter.result({
-  "duration": 693161200,
-  "status": "passed"
+  "status": "skipped"
 });
 });
