@@ -75,14 +75,15 @@ public class DealMapStepDefination {
 			driver.findElement(By.name("probability")).sendKeys(dealValues.get("Probability"));
 			driver.findElement(By.name("amount")).sendKeys(dealValues.get("Amount"));
 			driver.findElement(By.name("commission")).sendKeys(dealValues.get("Commission"));
-						
+			driver.findElement(By.xpath("//button[@class='ui linkedin button']")).click();
+			Thread.sleep(3000);
+
+			// save button
+
+			driver.findElement(By.xpath("//span[contains(text(),'Deals')]")).click();
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("//button[contains(.,'New')]")).click();
 		}
-		//save button
-		driver.findElement(By.xpath("//button[@class='ui linkedin button']")).click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//span[contains(text(),'Deals')]")).click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//button[contains(.,'New')]")).click();
 	}
 
 	@Then("^Close the browser$")

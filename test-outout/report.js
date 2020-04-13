@@ -112,56 +112,56 @@ formatter.match({
   "location": "DealMapStepDefination.user_already_on_login_page()"
 });
 formatter.result({
-  "duration": 13083601600,
+  "duration": 13404335600,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapStepDefination.title_of_login_page_is_free_CRM()"
 });
 formatter.result({
-  "duration": 9351400,
+  "duration": 8462300,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapStepDefination.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 5467164400,
+  "duration": 5855017800,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapStepDefination.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 68144700,
+  "duration": 57513000,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapStepDefination.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 6060700,
+  "duration": 5965000,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapStepDefination.user_moves_to_new_deal_page()"
 });
 formatter.result({
-  "duration": 6252258900,
+  "duration": 6249009300,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapStepDefination.user_enters_contacts_details(DataTable)"
 });
 formatter.result({
-  "duration": 7168474100,
+  "duration": 19931045400,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapStepDefination.close_the_browser()"
 });
 formatter.result({
-  "duration": 674324200,
+  "duration": 693161200,
   "status": "passed"
 });
 });
